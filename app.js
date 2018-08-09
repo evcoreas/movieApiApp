@@ -1,7 +1,7 @@
 // ==========DEPENDENCIES============
-var express = require('express');
-var app = express();
-var request = require('request');
+const express = require('express');
+const app = express();
+const request = require('request');
 
 // ==========SERVING DIRECTORIES========
 app.use(express.static("public"));
@@ -13,8 +13,8 @@ app.get("/", function(req, res){
 });
 
 app.get("/results", function(req, res) {
-	var searchRequest = req.query.search;
-	var url = "http://www.omdbapi.com/?s=" + searchRequest + "&apikey=thewdb";
+	let searchRequest = req.query.search;
+	let url = "http://www.omdbapi.com/?s=" + searchRequest + "&apikey=thewdb";
 	request(url, function(error, response, body){
 		if(!error && response.statusCode == 200) {
 			// res.send(body); use this code to test that you are retireving the dat before you parse
@@ -27,10 +27,8 @@ app.get("/results", function(req, res) {
 
 
 
-
-
-
 // ===========SERVER==============
 app.listen(8080, function(){
 	console.log("Movie App is running on Port 8080!");
+	// localhost:8080
 });

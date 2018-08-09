@@ -1,0 +1,33 @@
+body {
+	background-color: #E7ECEF;
+	color: #000000;
+}
+
+.header {
+	text-align: center;
+    padding: 32px;
+}
+
+.row img {
+/*   flex: 33.33%;
+  padding: 5px; */
+   float: left;
+   width: 33.33%;
+   padding: 5px;
+}
+
+.container::after {
+	content: "";
+    clear: both;
+    display: table;
+}
+
+/* .content img {
+	margin-top: 8px;
+    vertical-align: middle;
+} */
+
+.title {
+	padding: 15px;
+    text-align: center;
+}
