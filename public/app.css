@@ -1,33 +1,53 @@
 body {
 	background-color: #E7ECEF;
 	color: #000000;
+	box-sizing: border-box;
 }
 
 .header {
 	text-align: center;
-    padding: 32px;
+	margin-top: 5px;
+	padding: 15px;
+    
 }
 
-.row img {
-/*   flex: 33.33%;
-  padding: 5px; */
-   float: left;
-   width: 33.33%;
-   padding: 5px;
+.form {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
 }
 
-.container::after {
-	content: "";
+#searchBar {
+	height: 30px;
+}
+
+#buttonBox {
+	height: 30px;
+}
+
+/* button {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+} */
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
     clear: both;
     display: table;
 }
 
-/* .content img {
-	margin-top: 8px;
-    vertical-align: middle;
-} */
-
 .title {
-	padding: 15px;
-    text-align: center;
+	text-align: center;
 }
+
+img {
+	width: 100%;
+}
+

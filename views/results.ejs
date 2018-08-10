@@ -4,9 +4,9 @@
 	<h1>Results</h1>
 </div>
 
-<div class="container">
-	<div class="row">
 	<% dataVar["Search"].forEach(function(movie) { %>
+<div class="row">
+	<div class="column">
 			<img src= "<%= movie["Poster"] %>" >
 			<div class="title">
 				<strong>
@@ -14,9 +14,10 @@
 				</strong>
 				 - <%= movie["Year"] %>
 			 </div>
-	<% }) %>
 	</div>
 </div>
+	<% }) %>
+
 
 
 <button><a href="/">Search Again!</a></button>
