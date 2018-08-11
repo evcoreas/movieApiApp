@@ -1,15 +1,24 @@
-<h1>Results</h1>
-
-<ul>
+<% include partials/header %>
+<div class="container">
+	<div id="text-box2">
+		<h1 class="display-4">The Results!</h1>
+		<p>These are the top results</p>
+	</div>		
+	<div class="row text-center" id="results-style">
 	<% dataVar["Search"].forEach(function(movie) { %>
-		<li> 
-			<strong>
-			<%= movie["Title"] %>
-			</strong>
-			 - <%= movie["Year"] %>
-		</li>
+		<div class="col-6 col-md-4">
+			<div class="row">
+					<img src= "<%= movie["Poster"] %>" >
+					<div class="caption" id="text-cap">
+						<strong>
+						<%= movie["Title"] %>
+						</strong>
+						 - <%= movie["Year"] %>
+					 </div>
+			</div>
+	</div>
 	<% }) %>
-</ul>
-
-<!-- <a href="/">Search Again!</a> -->
-<button><a href="/">Search Again!</a></button>
+	<a class="btn btn-secondary btn-lg btn-block" id="search-btn" href="/" role="button">Search Again!</a>
+	</div>
+</div>
+<%include partials/footer %>
