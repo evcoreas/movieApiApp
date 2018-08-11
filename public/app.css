@@ -1,10 +1,39 @@
 body {
 	background-color: #E7ECEF;
 	color: #000000;
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 }
 
-.header {
+#text-box {
+	text-align: center;
+	width: 50%;
+	margin: 80px auto;
+}
+
+#results-style {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#space {
+	padding: 15px;
+}
+
+#search-btn {
+	margin: 30px;
+	padding: 10px;
+}
+
+#text-cap {
+	padding: 10px;
+}
+
+#text-box2 {
+	text-align: center;
+	margin: 25px auto;
+}
+
+/* .header {
 	text-align: center;
 	margin-top: 5px;
 	padding: 15px;
@@ -25,11 +54,11 @@ body {
 	height: 30px;
 }
 
-/* button {
+button {
 	display: flex;
 	justify-content: center;
 	justify-items: center;
-} */
+}
 
 .column {
     float: left;
@@ -49,5 +78,5 @@ body {
 
 img {
 	width: 100%;
-}
+} */
 
