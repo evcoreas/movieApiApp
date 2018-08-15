@@ -1,4 +1,4 @@
-# Movie App
+# Movie Web App
 I created a Movie Web Application for a class project using [OMDb API](http://www.omdbapi.com), Express and EJS.
 I used the API to retrieve movies by title and show the year they came out in and also to show an image of the movie.
 
